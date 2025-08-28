@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|c:\\ifsp\\2025\\esd-2\\projeto-vendedores-csharp\\projeto-vendedores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|solutionrelative:projeto-vendedores\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|c:\\ifsp\\2025\\esd-2\\projeto-vendedores-csharp\\projeto-vendedores\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|solutionrelative:projeto-vendedores\\venda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|c:\\ifsp\\2025\\esd-2\\projeto-vendedores-csharp\\projeto-vendedores\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|solutionrelative:projeto-vendedores\\vendedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|c:\\ifsp\\2025\\esd-2\\projeto-vendedores-csharp\\projeto-vendedores\\vendedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{404A3505-94F2-473A-9189-9F397766CB8B}|projeto-vendedores\\projeto-vendedores.csproj|solutionrelative:projeto-vendedores\\vendedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vendedores.cs",
+              "DocumentMoniker": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Vendedores.cs",
+              "RelativeDocumentMoniker": "projeto-vendedores\\Vendedores.cs",
+              "ToolTip": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Vendedores.cs",
+              "RelativeToolTip": "projeto-vendedores\\Vendedores.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAUwBQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:11:32.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vendedor.cs",
+              "DocumentMoniker": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Vendedor.cs",
+              "RelativeDocumentMoniker": "projeto-vendedores\\Vendedor.cs",
+              "ToolTip": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Vendedor.cs",
+              "RelativeToolTip": "projeto-vendedores\\Vendedor.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:11:31.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venda.cs",
+              "DocumentMoniker": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Venda.cs",
+              "RelativeDocumentMoniker": "projeto-vendedores\\Venda.cs",
+              "ToolTip": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Venda.cs",
+              "RelativeToolTip": "projeto-vendedores\\Venda.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:11:30.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Program.cs",
+              "RelativeDocumentMoniker": "projeto-vendedores\\Program.cs",
+              "ToolTip": "C:\\IFSP\\2025\\ESD-2\\projeto-vendedores-csharp\\projeto-vendedores\\Program.cs",
+              "RelativeToolTip": "projeto-vendedores\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T00:11:28.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
