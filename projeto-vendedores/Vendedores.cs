@@ -12,22 +12,22 @@ namespace projeto_vendedores
         private int max;
         private int qtde;
 
-        internal Vendedor[] OsVendedores { get => osVendedores; }
         public int Max { get => max; }
         public int Qtde { get => qtde; }
+        public Vendedor[] OsVendedores { get => osVendedores; }
 
-        public Vendedores()
+        public Vendedores(int max)
         {
-            this.max = 10;
+            this.max = max;
             this.qtde = 0;
-            this.osVendedores = new Vendedor[this.max];
+            this.osVendedores = new Vendedor[max];
         }
 
         public bool addVendedor(Vendedor vendedor)
         {
             bool podeAdicionar = (this.qtde < this.max);
             if (podeAdicionar)
-                this.osVendedores[this.qtde++] = vendedor;
+                this.OsVendedores[this.qtde++] = vendedor;
             return podeAdicionar;
         }
 
@@ -38,15 +38,15 @@ namespace projeto_vendedores
             if (podeRemover && vendedor.valorVendas() == 0)
             {
                 int i = 0;
-                while (i < this.max && this.osVendedores[i].Id != vendedor.Id)
+                while (i < this.max && this.OsVendedores[i].Id != vendedor.Id)
                 {
                     ++i;
                 }
                 for (j = i; j < this.max - 1; ++j)
                 {
-                    this.osVendedores[j] = this.osVendedores[j + 1];
+                    this.OsVendedores[j] = this.OsVendedores[j+1];
                 }
-                this.osVendedores[j] = new Vendedor();
+                this.OsVendedores[j] = new Vendedor();
                 this.qtde--;
             }
             return podeRemover;
@@ -55,25 +55,23 @@ namespace projeto_vendedores
         public Vendedor searchVendedor(Vendedor vendedor)
         {
             Vendedor vendedorAchado = new Vendedor();
-            foreach (Vendedor vend in this.osVendedores)
+            foreach (Vendedor v in this.OsVendedores)
             {
-                if (vend != null && vend.Id == vendedor.Id)
+                if (v != null && v.Id == vendedor.Id)
                 {
-                    vendedorAchado = vend;
+                    vendedorAchado = v;
                     break;
                 }
             }
             return vendedorAchado;
         }
 
-        public double valorVenda() {
+        public double valorVendas() {
             double total = 0;
-            foreach (Vendedor vend in this.osVendedores)
+            foreach (Vendedor v in this.OsVendedores)
             {
-                if (vend != null)
-                {
-                    total += vend.valorVendas();
-                }
+                if (v != null)
+                    total += v.valorVendas();
             }
             return total;
         }
@@ -81,12 +79,10 @@ namespace projeto_vendedores
         public double valorComissao()
         {
             double total = 0;
-            foreach (Vendedor vend in this.osVendedores)
+            foreach (Vendedor v in this.OsVendedores)
             {
-                if (vend != null)
-                {
-                    total += vend.valorComissao();
-                }
+                if (v != null)
+                    total += v.valorComissao();
             }
             return total;
         }

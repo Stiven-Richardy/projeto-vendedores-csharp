@@ -24,11 +24,7 @@ namespace projeto_vendedores
 
         public double valorMedio()
         {
-            if (this.qtde == 0) { 
-                return 0; 
-            }
-
-            return this.valor / this.qtde;
+            return (this.qtde == 0) ? 0 : this.valor / this.qtde;
         }
     }
 }

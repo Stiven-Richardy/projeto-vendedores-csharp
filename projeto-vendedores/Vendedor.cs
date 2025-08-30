@@ -12,7 +12,7 @@ namespace projeto_vendedores
         private int id;
         private string name;
         private double percComissao;
-        private Venda[] asVendas;
+        private Venda[] asVendas = new Venda[31];
 
         public int Id { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
@@ -24,7 +24,10 @@ namespace projeto_vendedores
             this.id = id;
             this.name = name;
             this.percComissao = percComissao;
-            this.asVendas = new Venda[31];
+            for (int i = 0; i < asVendas.Length; i++)
+            {
+                asVendas[i] = null;
+            }
         }
 
         public Vendedor(int id) : this(id, "", 0) { }
@@ -33,12 +36,15 @@ namespace projeto_vendedores
 
         public void registrarVenda(int dia, Venda venda)
         {
+            if (dia < 1 || dia > 31) 
+                throw new ArgumentOutOfRangeException(nameof(dia), "Dia deve estar entre 1 e 31.");
             int d = dia - 1;
             if (asVendas[d] == null)
             {
                 asVendas[d] = new Venda(venda.Qtde, venda.Valor);
-                Console.WriteLine($" Total da venda registrada no dia {dia}: R${venda.Qtde * venda.Valor}");
-            } else
+                Console.WriteLine($" Total da venda no dia {dia}: R${venda.Valor}");
+            } 
+            else
             {
                 asVendas[d].Qtde += venda.Qtde;
                 asVendas[d].Valor += venda.Valor;
@@ -48,21 +54,17 @@ namespace projeto_vendedores
         public double valorVendas()
         {
             double total = 0;
-
-            for(int i = 0; i < asVendas.Length; ++i)
+            foreach(var v in asVendas)
             {
-                if (asVendas[i] != null)
-                {
-                    total += asVendas[i].Valor;
-                }
+                if (v != null)
+                    total += v.Valor;
             }
-
             return total;
         }
 
         public double valorComissao()
         {
-            return valorVendas() * (percComissao / 100);
+            return valorVendas() * (this.percComissao / 100);
         }
     }
 }
